@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing Form</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+		<!--Custom styles-->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<style type="text/css">
+			a {
+			  color: #92badd;
+			  display:inline-block;
+			  text-decoration: none;
+			  font-weight: 400;
+			}
+
+			h2 {
+			  text-align: center;
+			  font-size: 16px;
+			  font-weight: 600;
+			  text-transform: uppercase;
+			  display:inline-block;
+			  margin: 40px 8px 10px 8px; 
+			  color: #cccccc;
+			}
+
+
+			/* STRUCTURE */
+			#formContent {
+			  -webkit-border-radius: 10px 10px 10px 10px;
+			  border-radius: 10px 10px 10px 10px;
+			  background: #fff;
+			  padding: 30px;
+			  width: 90%;
+			  max-width: 450px;
+			  position: relative;
+			  padding: 0px;
+			  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+			  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+			  text-align: center;
+			  margin: 0 auto;
+			}
+
+
+			/* FORM TYPOGRAPHY*/
+			form.form-signin { padding-top: 30px; }
+			input[type=text], input[type=password] {
+			  background-color: #f6f6f6;
+			  border: none;
+			  color: #0d0d0d;
+			  padding: 10px 30px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 5px;
+			  width: 75%;
+			  border: 2px solid #f6f6f6;
+			  -webkit-transition: all 0.5s ease-in-out;
+			  -moz-transition: all 0.5s ease-in-out;
+			  -ms-transition: all 0.5s ease-in-out;
+			  -o-transition: all 0.5s ease-in-out;
+			  transition: all 0.5s ease-in-out;
+			  -webkit-border-radius: 5px 5px 5px 5px;
+			  border-radius: 5px 5px 5px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="formContent" style="margin-top: 100px;">
+				<form class="form-signin" method="post" action="http://example.com/arunendra/form.php">
+					Username : <input type="text" name="username"><br><br>
+					Password : <input type="password" name="password"><br><br>
+
+					<button class="btn btn-primary btn-block btn-signin" onclick="return check(this.form)" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="https:maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+		<script type="text/javascript">
+			function check(form){
+			    if(form.username.value == "admin" && form.password.value == "alfa@123"){
+			        return true;
+			    }
+			    else{
+			        alert("Error Password or Username")
+			        return false;
+			    }
+			}
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,15 @@
+installation process..........
+
+First we need to upload contact.php and form.php on your server(cpanel or local server like xampp or wamp)
+
+than you need to download home.html on your local machine and configure for action attribute
+
+Second you need to create database and table using sql commond or directly. Run database query which have in form.php file in below section as comment format
+
+than after you need to update some field on contact.php file...
+
+$dbusername = "_aradmin";
+$dbpassword = "UzovBNw1";
+$dbname = "_testpg";
+
+After these configraution your database will be connected and you can add data 
